@@ -27,7 +27,7 @@
         var c = parseInt(document.getElementById("c").value,10);//右のテキストボックス
         
         //a+b=cだったら"上の式は正しいです"と出力，a+b≠cだったら"上の式は正しくありません！"と出力
-        equal(a+b,c)? outputString("上の式は正しいです！"):outputString("上の式は正しくありません！");
+        equal(a+b,c)? outputString("上の式は正しいです！");outputString("上の式は正しくありません！");
     },false);
 
     /*二つの数値を比較して同一だったらtrue，同一でなければfalseを返す関数*/
